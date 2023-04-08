@@ -1,15 +1,15 @@
 
 const getKiller = (suspectInfo, deadPeople ) => {
 
-   // for (const key in suspectInfo){
-   // if (deadPeople.every(name => suspectInfo[key].includes(name))){
-   //     return `Убийца ${key}`
-   // }
-   // }
+    for (const key in suspectInfo){
+    if (deadPeople.every(name => suspectInfo[key].includes(name))){
+        return `Убийца ${key}`
+    }
+    }
 
-    return Object.keys(suspectInfo).find((key) =>
-        deadPeople.every((name) => suspectInfo[key].includes(name))
-    );
+    //return Object.keys(suspectInfo).find((key) =>
+    //    deadPeople.every((name) => suspectInfo[key].includes(name))
+    //);
 
 }
 
